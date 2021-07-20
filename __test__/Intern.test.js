@@ -1,9 +1,9 @@
-const Manager = require ('../lib/Manager');
-jest.mock('../lib/Manager.js');
+const Intern = require('../lib/Intern');
+jest.mock('../lib/Intern');
 
-test('creates a manager object', () =>{
+test('creates a Intern object', () =>{
 
-    const manager = new Manager ();
+    const manager = new Intern ();
 
      expect(manager.name).toBe('Jane');
      expect(manager.employeeId).toEqual(expect.any(Number));

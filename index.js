@@ -1,3 +1,9 @@
-const Manager = require ('./lib/Manager');
+const Team = require ('./lib/Team');
 
-new Manager().getManager ();
+console.log(`
+            ===================================
+            Team Profiler: Adding Team Manager
+            ===================================
+`);
+
+new Team().AddTeam('Team Manager');
