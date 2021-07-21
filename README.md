@@ -31,6 +31,9 @@ This application generates a team profile webpage based on user input through co
 ### Video: 
 click [here](https://drive.google.com/file/d/1HqjKtw8qIOJ97iqdkzTQ5-T53q34mv05/view) to watch demo video.
 
+### Sample: Generated HTML file
+[Sample HTML file](./dist/index.html)
+
 ### Screenshot:
 
 ![](./assets/image/team-profiler-screenshot.png)
