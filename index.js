@@ -1,4 +1,4 @@
-const Team = require ('./lib/Team');
+const Employee = require ('./lib/Employee');
 
 console.log(`
             ===================================
@@ -6,4 +6,4 @@ console.log(`
             ===================================
 `);
 
-new Team().AddTeam('Team Manager');
+new Employee().AddTeam('Team Manager');
