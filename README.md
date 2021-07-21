@@ -29,7 +29,7 @@ This application generates a team profile webpage based on user input through co
 ## Demo:
 
 ### Video: 
-click [here](https://drive.google.com/file/d/1bz3_umvs9dF68iGlffpzOVLV49kMq_uL/view) to watch demo video.
+click [here](https://drive.google.com/file/d/1HqjKtw8qIOJ97iqdkzTQ5-T53q34mv05/view) to watch demo video.
 
 ### Screenshot:
 
