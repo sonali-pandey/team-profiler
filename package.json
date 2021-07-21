@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sonali-pandey/team-profiler#readme",
   "dependencies": {
+    "email-validator": "^2.0.4",
     "inquirer": "^8.1.2"
   },
   "devDependencies": {
