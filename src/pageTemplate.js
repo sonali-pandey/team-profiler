@@ -7,7 +7,7 @@ const additionalData = (member,role) => {
     }
     else if(role === 'engineer'){
         return `
-        <p class="card-action">GitHub username: <a href="https://github.com/${member.github}">${member.github}</a></p>`
+        <p class="card-action">GitHub username: <a href="https://github.com/${member.github}" target="_blank">${member.github}</a></p>`
     }
     else if(role === 'intern'){
         return `
@@ -23,17 +23,17 @@ const display = (teamMember, role) => {
     return `
     ${teamMember.map(member=>{
         return `
-        <ul class="card lighten-4 col s4 offset-s1">
+        <ul class="card lighten-4 col s4 offset-s1 grey">
             <li>
                 <h3 class="card-header center">${member.name}</h3>
             </li>
-            <li>
+            <li class="card">
                 <p class="card-content">Employee ID: ${member.employeeId}</p>
             </li>
-            <li>
+            <li class="card">
                 <p class="card-action">Email Address: <a href="mailto:${member.email}">${member.email}</a></p>
             </li>
-            <li>
+            <li class="card">
             ${additionalData(member, role)}
             </li>
         </ul>
@@ -56,6 +56,7 @@ module.exports = (teamInfo)=>{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -64,19 +65,19 @@ module.exports = (teamInfo)=>{
     </header>
     <main class="container">
         <div id='manager' class="row">
-            <h2 class="center purple lighten-3 white-text col s12">Manager</h2>
+            <h2 class="center purple lighten-3 white-text col s12"><i class="medium material-icons">local_cafe</i> Manager</h2>
             <div class="col s12 purple-text">
             ${display(teamInfo.manager,'manager')}
             </div>
         </div>
         <div id='engineer' class="row">
-            <h2 class="center red lighten-3 white-text">Engineer</h2>
+            <h2 class="center red lighten-3 white-text"><i class="medium material-icons">engineering</i> Engineer</h2>
             <div class="col s12 red-text">
             ${display(teamInfo.engineer,'engineer')}
             </div>
         </div>
         <div id='intern' class='row'>
-            <h2 class="center blue lighten-3 white-text">Intern</h2>
+            <h2 class="center blue lighten-3 white-text"><i class="medium material-icons">school</i> Intern</h2>
             <div class="col s12 blue-text">
             ${display(teamInfo.intern,'intern')}
             </div>
